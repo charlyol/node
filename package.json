@@ -1,12 +1,14 @@
 {
-  "name": "nodejstoday",
+  "name": "alpsdrive",
   "version": "1.0.0",
   "description": "script for run today",
   "main": "index.js",
   "scripts": {
     "today": "node today.js",
-    "weather": "node weather.js"
+    "weather": "node weather.js",
+    "dev": "nodemon  main.js"
   },
+
   "keywords": [],
   "author": "moi",
   "license": "ISC",
@@ -19,6 +21,10 @@
   },
   "homepage": "https://github.com/charlyol/node#readme",
   "dependencies": {
+    "express": "^4.19.2",
     "weather-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
