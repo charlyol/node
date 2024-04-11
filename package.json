@@ -1,12 +1,12 @@
 {
   "name": "alpsdrive",
   "version": "1.0.0",
-  "description": "script for run today",
-  "main": "index.js",
+  "description": "server test api",
+  "main": "function/main.js",
   "scripts": {
-    "today": "node today.js",
-    "weather": "node weather.js",
-    "dev": "nodemon  main.js"
+    "today": "node exoTest/today.js",
+    "weather": "node exoTest/weather.js",
+    "dev": "nodemon  function/main.js"
   },
 
   "keywords": [],
