@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express';
+import * as api from "../routes/api.mjs"
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -15,8 +16,7 @@ function start() {
         res.send('Hello World!');
     });
 
-    const api = require("../routes/api")
-    app.use("/",api)
+    app.use('/',api)
 
     app.listen(port, () => {
         console.log('Server is running on port 3000');

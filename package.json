@@ -2,13 +2,13 @@
   "name": "alpsdrive",
   "version": "1.0.0",
   "description": "server test api",
-  "main": "function/main.js",
+  "main": "function/main.mjs",
   "scripts": {
     "today": "node exoTest/today.js",
     "weather": "node exoTest/weather.js",
-    "dev": "nodemon  function/main.js"
+    "dev": "nodemon  function/main.mjs"
   },
-
+"type": "module",
   "keywords": [],
   "author": "moi",
   "license": "ISC",
