@@ -43,6 +43,7 @@ router.get("/api/drive/", async (req, res) => {
             return {
                 name: file.name,
                 isFolder: file.isDirectory(),
+                size: file.size,
             };
         });
 

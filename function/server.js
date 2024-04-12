@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const api = require("../routes/api")
+const api = require("../routes/api");
 const port = process.env.PORT || 3000;
 
 app.use(function(req, res, next) {
@@ -17,7 +17,7 @@ function start() {
     });
 
 
-    app.use("/",api)
+    app.use('/',api)
 
     app.listen(port, () => {
         console.log('Server is running on port 3000');
@@ -25,5 +25,5 @@ function start() {
 }
 
 
-module.exports = { start };
+module.exports=start;
 
