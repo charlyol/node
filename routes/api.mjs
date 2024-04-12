@@ -1,7 +1,7 @@
-import express from 'express';
-import {promises as fs} from "fs";
-import path from "path";
+const express = require("express");
 const router = express.Router();
+const fs = require("fs").promises;
+const path = require("path");
 const folderPath = path.join(__dirname, "../controllers/folder");
 
 // Route pour créer un nouveau dossier

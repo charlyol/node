@@ -1,6 +1,6 @@
-import express from 'express';
-import * as api from "../routes/api.mjs"
+const express = require('express');
 const app = express();
+const api = require("../routes/api")
 const port = process.env.PORT || 3000;
 
 app.use(function(req, res, next) {
@@ -16,7 +16,8 @@ function start() {
         res.send('Hello World!');
     });
 
-    app.use('/',api)
+
+    app.use("/",api)
 
     app.listen(port, () => {
         console.log('Server is running on port 3000');
