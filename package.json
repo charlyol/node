@@ -6,9 +6,8 @@
   "scripts": {
     "today": "node exoTest/today.js",
     "weather": "node exoTest/weather.js",
-    "dev": "nodemon  function/main.js"
+    "dev": "nodemon --inspect function/main.js "
   },
-
   "keywords": [],
   "author": "moi",
   "license": "ISC",

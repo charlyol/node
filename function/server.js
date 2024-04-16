@@ -16,8 +16,9 @@ function start() {
         res.send('Hello World!');
     });
 
-
-    app.use('/',api)
+    app.use('/',api);
+    app.use(express.json());
+    app.use(express.urlencoded({extended: false}));
 
     app.listen(port, () => {
         console.log('Server is running on port 3000');
@@ -25,5 +26,5 @@ function start() {
 }
 
 
-module.exports=start;
+module.exports = start;
 
