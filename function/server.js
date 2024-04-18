@@ -1,7 +1,14 @@
 const express = require('express');
 const app = express();
+const bb = require('express-busboy');
 const api = require("../routes/api");
+const path = require("path");
 const port = process.env.PORT || 3000;
+bb.extend(app, {
+    upload: true,
+    path: path.join(__dirname, "../data/folder"),
+});
+
 
 app.use(function(req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "*"); // Autoriser toutes les origines (à des fins de développement)

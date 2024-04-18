@@ -21,6 +21,7 @@
   "homepage": "https://github.com/charlyol/node#readme",
   "dependencies": {
     "express": "^4.19.2",
+    "express-busboy": "^10.1.0",
     "weather-js": "^2.0.0"
   },
   "devDependencies": {
